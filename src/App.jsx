@@ -87,14 +87,14 @@ ScrollTrigger.create({
 
   return (
     <>
-      <div className="relative w-full h-[100vh] overflow-hidden bg-[#ede0d4]">
+      <div className="relative w-full min-h-screen overflow-hidden bg-[#ede0d4]">
         <NavBar />
 
         <img
           ref={plantImgRef}
           src={Plant}
           alt="Plant"
-          className="absolute w-full h-screen object-contain bg-transparent z-30 border-2 border-white"
+          className="absolute w-full h-screen object-contain bg-transparent z-30  "
         />
 
         <div
