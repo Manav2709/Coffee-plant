@@ -1,7 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import gsap from 'gsap';
-import Coffee from "../assets/images/coffee.png"
-import CoffeeBean from "../assets/images/coffee-2.png"
+import CoffeeBean from "../assets/images/coffee-2.png";
 
 const NavBar = () => {
   const navRef = useRef(null);
@@ -22,7 +21,7 @@ const NavBar = () => {
       },
       "-=0.7"
     )
-    .fromTo('.titillium-web-regular li',
+    .fromTo('.nav-item',
       { opacity: 0, y: 20 },
       { 
         opacity: 1,
@@ -37,20 +36,22 @@ const NavBar = () => {
 
   return (
     <nav ref={navRef} className="w-[80%] h-16 bg-[#b08968]/50 rounded-lg backdrop-blur-3xl z-40 absolute top-5 px-4 left-40 p-2 flex items-center justify-between overflow-hidden">
-    <div className='flex items-center'>
+      <div className='flex items-center'>
         <h1 className='nav-title text-3xl exo-2 text-amber-900'>Coffee</h1>
         <img src={CoffeeBean} alt="Coffee Logo" className='size-16 ' />
-    </div>
-    <div className="w-full flex justify-end">
-        <ul className='flex gap-4 titillium-web-regular text-lg'>
-            <li>Home</li>
-            <li>About</li>
-            <li>Contact</li>
-            <li>Products</li>
+      </div>
+      <div className="w-full flex justify-end">
+        <ul className='flex gap-6 titillium-web-regular text-lg'>
+          {["Home", "About", "Contact", "Products"].map((item, index) => (
+            <li key={index} className="nav-item relative cursor-pointer">
+              {item}
+              <span className="nav-underline"></span>
+            </li>
+          ))}
         </ul>
-    </div>
-</nav>
-  )
-}
+      </div>
+    </nav>
+  );
+};
 
-export default NavBar
+export default NavBar;
