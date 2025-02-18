@@ -74,7 +74,7 @@ const NavBar = () => {
             <li 
               key={index} 
               className="nav-item relative cursor-pointer text-amber-900"
-              onClick={() => setIsOpen(false)}
+              
             >
               {item}
               <span className="nav-underline"></span>
