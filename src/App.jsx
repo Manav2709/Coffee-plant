@@ -98,7 +98,7 @@ ScrollTrigger.create({
         />
 
         <div
-          className="absolute sm:top-18 top-40 left-1/2 transform -translate-x-1/2 z-20 whitespace-nowrap"
+          className="absolute sm:top-18 top-55 left-1/2 transform -translate-x-1/2 z-20 whitespace-nowrap"
           style={{ transform: `translateY(${scrollY * 0.5}px)` }}
         >
           <h1 ref={plantTextRef} className="text-black poppins-extrabold font-bold text-[30vw] md:text-[30vw]  lg:text-[350px]">
