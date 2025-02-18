@@ -94,7 +94,7 @@ ScrollTrigger.create({
           ref={plantImgRef}
           src={Plant}
           alt="Plant"
-          className="absolute w-full h-screen object-contain bg-transparent z-30 md:object-contain"
+          className="absolute w-full h-screen object-contain  bg-transparent z-30 md:object-contain"
         />
 
         <div

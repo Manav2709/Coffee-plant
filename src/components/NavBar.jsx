@@ -36,7 +36,7 @@ const NavBar = () => {
   }, []);
 
   return (
-    <nav ref={navRef} className="absolute top-5 left-[51%] transform h-16 -translate-x-1/2 w-[95%] md:w-[80%] bg-[#b08968]/50 rounded-lg backdrop-blur-3xl z-40 px-4 p-1 flex items-center justify-between">
+    <nav ref={navRef} className="absolute top-5 left-[50%] transform h-16 -translate-x-1/2 w-[95%] md:w-[80%] bg-[#b08968]/50 rounded-lg backdrop-blur-3xl z-40 px-4 p-1 flex items-center justify-between">
       <div className='flex items-center'>
         <h1 className='nav-title text-xl md:text-3xl exo-2 text-amber-900'>Coffee</h1>
         <img src={CoffeeBean} alt="Coffee Logo" className='size-10 md:size-16' />
